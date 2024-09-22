@@ -10,7 +10,7 @@ Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."**
 ## Project Overview
 We leverage two datasets:
 
-ai4privacy/pii-masking-43k
+ai4privacy/pii-masking-43k  
 English Balanced 10K
 
 These datasets contain labeled text with **116 entity types/labels to mask** listed below, including personal names, addresses, passwords, and more. The DistilBERT model is fine-tuned to recognize and mask such entities in the input text to ensure privacy.  
