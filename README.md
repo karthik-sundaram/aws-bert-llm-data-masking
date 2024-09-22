@@ -5,6 +5,9 @@ Sensitive Data Masking with Named Entity Recognition (NER) Using DistilBERT
 This project demonstrates how a DistilBERT-based NER model can be fine-tuned to detect and mask sensitive information such as personal names, addresses, passwords, and other identifiable data.
 It showcases how we can enhance data privacy in real-world applications like healthcare or finance especially with being cautious about inadvertently sending out sensitive information into LLM/GenAi tool prompts.
 
+**Input: "John Doe lives at 123 Main St, California 90210."  
+Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."**    
+
 
 ### Project Overview
 We leverage two datasets:
@@ -19,10 +22,8 @@ These datasets contain labeled text with 116 entity types, including personal na
 
 Data Preprocessing: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
 Model Training: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
-Post-processing: Masking sensitive entities in the output text by replacing identified entities with [MASKED].
-Example
-Input: "John Doe lives at 123 Main St, California 90210."
-Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."
+Post-processing: Masking sensitive entities in the output text by replacing identified entities with [MASKED].  
+  
 Explore the Full Code on Kaggle
 You can view and run the full code in the Kaggle Notebook:
 
@@ -30,6 +31,12 @@ Kaggle Notebook Link:
 https://www.kaggle.com/code/karthiksundaram123/ner-bert-privacy/edit
 
 ![image](https://github.com/user-attachments/assets/414d3498-7d38-427b-ae94-065a9d93653d)
+
+Watch a small demo here:
+[![Watch the video](https://img.youtube.com/vi/https://youtu.be/6AAC1GAwzhQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+
+
 
 
 
