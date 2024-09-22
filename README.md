@@ -26,14 +26,20 @@ Post-processing: Masking sensitive entities in the output text by replacing iden
 Explore the Full Code on Kaggle
 You can view and run the full code in the Kaggle Notebook:
 
-#### Performace:  
+
+### Performace:  
+
 ![image](https://github.com/user-attachments/assets/414d3498-7d38-427b-ae94-065a9d93653d)  
 (Check complete performance pivoted on each of 116 labels inside the links below)    
 
-#### Kaggle Notebook Link:  
-https://www.kaggle.com/code/karthiksundaram123/ner-bert-privacy/edit  
   
-#### Watch a small demo here:  
+## Kaggle Notebook Link:  
+
+https://www.kaggle.com/code/karthiksundaram123/ner-bert-privacy/edit  
+
+      
+### Watch a small demo here: 
+
 [![Watch the video](https://img.youtube.com/vi/6AAC1GAwzhQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6AAC1GAwzhQ)  
 
 
