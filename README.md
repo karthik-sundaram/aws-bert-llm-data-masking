@@ -7,7 +7,7 @@ It showcases how we can enhance data privacy in real-world applications like hea
 Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."**    
 
 
-### Project Overview
+## Project Overview
 We leverage two datasets:
 
 ai4privacy/pii-masking-43k
@@ -28,20 +28,20 @@ You can view and run the full code in the Kaggle Notebook:
 
 
 
-### Performace:  
+## Performace:  
 
 ![image](https://github.com/user-attachments/assets/414d3498-7d38-427b-ae94-065a9d93653d)  
 (Check complete performance pivoted on each of 116 labels inside the links below)    
 
 
   
-### Kaggle Notebook Link:  
+## Kaggle Notebook Link:  
 
 https://www.kaggle.com/code/karthiksundaram123/ner-bert-privacy/edit  
   
 
           
-### Watch a small demo here: 
+## Watch a small demo here: 
 
 [![Watch the video](https://img.youtube.com/vi/6AAC1GAwzhQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6AAC1GAwzhQ)  
 
