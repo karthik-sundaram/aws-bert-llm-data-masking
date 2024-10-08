@@ -11,8 +11,6 @@ It also includes deployment and hosting using **AWS services**
 
 
 
-
-
 # WORKING:
 
     
@@ -73,6 +71,8 @@ _["0": "B-PREFIX", "1": "I-PREFIX", "2": "B-FIRSTNAME", "3": "I-FIRSTNAME", "4":
 - **Model Training**: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
 - **Post-processing**: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
 - **HF Spaces hosting**: Pushed fine tuned model to **karthiknitt/data_masking_distilbert_finetuned_ai4privacy**
+
+![image](https://github.com/user-attachments/assets/ac224611-e288-400d-ac39-617188a74aff)
 
 
 ## 2. AWS-Powered Inference Pipeline    
