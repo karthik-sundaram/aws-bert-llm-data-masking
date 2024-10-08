@@ -84,7 +84,7 @@ The inference pipeline leverages AWS Lambda as the orchestrator, coordinating re
  
 
 
-## Performace:  
+## Model Performace:  
 
 ![image](https://github.com/user-attachments/assets/414d3498-7d38-427b-ae94-065a9d93653d)  
 (Check complete performance pivoted on each of 116 labels inside the links below)    
