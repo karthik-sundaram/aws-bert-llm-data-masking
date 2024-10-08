@@ -72,7 +72,7 @@ _["0": "B-PREFIX", "1": "I-PREFIX", "2": "B-FIRSTNAME", "3": "I-FIRSTNAME", "4":
 - **Post-processing**: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
 - **HF Spaces hosting**: Pushed fine tuned model to **karthiknitt/data_masking_distilbert_finetuned_ai4privacy**
 
-![image](https://github.com/user-attachments/assets/3e484d3a-1b60-4493-96c0-bd6232bbbc47)
+![image](https://github.com/user-attachments/assets/f2b1161f-17d2-4a36-8b25-b6069f11f482)
 
 
 ## 2. AWS-Powered Inference Pipeline    
