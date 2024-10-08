@@ -7,7 +7,8 @@ It also includes deployment and hosting using **AWS services**
 ## ARCHITECTURE:
 
     
-![image](https://github.com/user-attachments/assets/d95cf0a8-b6d2-4232-813d-caf5b0be6211)
+![image](https://github.com/user-attachments/assets/c7de8d53-96dd-4024-a52e-7e0d463e6c8a)
+
 
 
 
