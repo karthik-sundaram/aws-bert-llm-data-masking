@@ -1,7 +1,8 @@
-# Sensitive Data Masking with Named Entity Recognition (NER) Using DistilBERT
+# AWS deployment - Sensitive Data Masking with Named Entity Recognition (NER) Using DistilBERT
 
 This project demonstrates how a DistilBERT-based NER model can be fine-tuned to detect and mask sensitive information such as personal names, addresses, passwords, and other identifiable data.
 It showcases how we can enhance data privacy in real-world applications like healthcare or finance especially with being cautious about inadvertently sending out sensitive information into LLM/GenAi tool prompts.
+It also includes deployment and hosting using **AWS services**
 
 **Input: "John Doe lives at 123 Main St, California 90210."  
 Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."**    
@@ -19,13 +20,23 @@ _["0": "B-PREFIX", "1": "I-PREFIX", "2": "B-FIRSTNAME", "3": "I-FIRSTNAME", "4":
 
 ## Process Outline
 
+### 1. Model Training  
 Data Preprocessing: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
 Model Training: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
-Post-processing: Masking sensitive entities in the output text by replacing identified entities with [MASKED].  
-  
-Explore the Full Code on Kaggle
-You can view and run the full code in the Kaggle Notebook:
+Post-processing: Masking sensitive entities in the output text by replacing identified entities with [MASKED].   
 
+
+### 2. AWS-Powered Inference Pipeline  
+The inference pipeline leverages AWS Lambda as the orchestrator, coordinating requests and model execution, and integrates with API Gateway and CloudWatch for monitoring. The pipeline ensures data privacy before text is sent for further processing by OpenAI.
+
+#### Inference Flow:  
+**Gradio Frontend**: Users input text via a Gradio interface hosted on Hugging Face Spaces.
+**API Gateway**: Secures and routes API calls between the frontend and Lambda
+**Lambda Orchestration**: Lambda handles the request and interacts with the **fine-tuned model (hosted on Hugging Face)** to mask sensitive data.
+**CloudWatch**: Monitors the Lambda functions and logs API interactions for performance tracking. 
+**OpenAI API**: The masked text is sent to OpenAI for further processing (e.g., text completion).
+**Response**: The final response is returned and displayed on the Gradio UI. 
+ 
 
 
 ## Performace:  
