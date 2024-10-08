@@ -99,7 +99,9 @@ https://www.kaggle.com/code/karthiksundaram123/ner-bert-privacy/edit
           
 ## Watch a small demo here: 
 
-[![Watch the video](https://img.youtube.com/vi/6AAC1GAwzhQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6AAC1GAwzhQ)  
+[![Watch the video](https://img.youtube.com/vi/TEne9pKfwbo/maxresdefault.jpg)](https://www.youtube.com/watch?v=TEne9pKfwbo)  
+
+[![Watch the video](https://img.youtube.com/vi/A1sinX2p_Ww/maxresdefault.jpg)](https://www.youtube.com/watch?v=A1sinX2p_Ww)  
 
 
 
