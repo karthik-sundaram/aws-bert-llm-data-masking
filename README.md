@@ -7,7 +7,8 @@ It also includes deployment and hosting using **AWS services**
 ## ARCHITECTURE:
 
     
-![image](https://github.com/user-attachments/assets/7b8d35b1-7fb0-435a-a76b-ad5c651e514a)
+![image](https://github.com/user-attachments/assets/d95cf0a8-b6d2-4232-813d-caf5b0be6211)
+
 
 
 ## WORKING:
@@ -66,16 +67,17 @@ _["0": "B-PREFIX", "1": "I-PREFIX", "2": "B-FIRSTNAME", "3": "I-FIRSTNAME", "4":
 ## Process Outline
 
 ### 1. Model Training    
-Data Preprocessing: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
-Model Training: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
-Post-processing: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
+**Data Preprocessing**: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
+**Model Training**: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
+**Post-processing**: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
+**HF Spaces hosting**: Pushed fine tuned model to **karthiknitt/data_masking_distilbert_finetuned_ai4privacy**
 
 
 ### 2. AWS-Powered Inference Pipeline    
 The inference pipeline leverages AWS Lambda as the orchestrator, coordinating requests and model execution, and integrates with API Gateway and CloudWatch for monitoring. The pipeline ensures data privacy before text is sent for further processing by OpenAI.  
 
 #### Inference Flow:    
-- **Gradio Frontend**: Users input text via a Gradio interface hosted on Hugging Face Spaces.  
+- **Gradio Frontend**: Users input text via a Gradio interface hosted on Hugging Face Spaces. **(karthiknitt/LLM_data_masking)**
 - **API Gateway**: Secures and routes API calls between the frontend and Lambda  
 - **Lambda Orchestration**: Lambda handles the request and interacts with the **fine-tuned model (hosted on Hugging Face)** to mask sensitive data.  
 - **CloudWatch**: Monitors the Lambda functions and logs API interactions for performance tracking.   
