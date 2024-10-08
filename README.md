@@ -4,8 +4,45 @@ This project demonstrates how a DistilBERT-based NER model can be fine-tuned to 
 It showcases how we can enhance data privacy in real-world applications like healthcare or finance especially with being cautious about inadvertently sending out sensitive information into LLM/GenAi tool prompts.
 It also includes deployment and hosting using **AWS services**
 
-**Input: "John Doe lives at 123 Main St, California 90210."  
-Masked Output: "[MASKED] [MASKED] lives at [MASKED] [MASKED] [MASKED]."**    
+![image](https://github.com/user-attachments/assets/7b8d35b1-7fb0-435a-a76b-ad5c651e514a)
+
+
+![image](https://github.com/user-attachments/assets/64ef563a-4627-4a4b-8c26-4605a27a41bd)
+
+### Input:  
+I am facing an error here. help me resolve in short:  
+  
+import psycopg2  
+conn = psycopg2.connect(host='192.168.1.100', port='5432', database='production_db', user='john_doe', password='1jhg$#12%9^f5')  
+cursor = conn.cursorr()   
+cursor.execute("SELECT * FROM users WHERE email = 'john.doe@example.com'")    
+
+### Masking of input: 
+I am facing an error here. help me resolve in short:  
+  
+import psycopg2 
+conn = psycopg2.connect(host='[MASKED]', port='[MASKED]', database='production_db', user='[MASKED]', password='[MASKED]')  
+cursor = conn.cursorr()    
+cursor.execute("SELECT * FROM users WHERE email = '[MASKED]'")  
+
+### LLM Response:  
+The error in your code is due to a typo in the method call `cursorr()`. It should be `cursor()`. Here's the corrected code:
+  
+```python 
+import psycopg2  
+  
+conn = psycopg2.connect(  
+    host='[MASKED]',   
+    port='[MASKED]',   
+    database='production_db',   
+    user='[MASKED]',   
+    password='[MASKED]'  
+)  
+cursor = conn.cursor()  # Corrected this line  
+cursor.execute("SELECT * FROM users WHERE email = '[MASKED]'")  
+```  
+  
+Make sure to replace `[MASKED]` with your actual database credentials.  
 
 
 ## Project Overview
