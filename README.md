@@ -58,8 +58,8 @@ _Make sure to replace `[MASKED]` with your actual database credentials._
   
 We leverage two datasets:
 
-ai4privacy/pii-masking-43k  
-English Balanced 10K
+- ai4privacy/pii-masking-43k  
+- English Balanced 10K
 
 These datasets contain labeled text with **116 entity types/labels to mask** listed below, including personal names, addresses, passwords, and more. The DistilBERT model is fine-tuned to recognize and mask such entities in the input text to ensure privacy.  
   
@@ -68,10 +68,10 @@ _["0": "B-PREFIX", "1": "I-PREFIX", "2": "B-FIRSTNAME", "3": "I-FIRSTNAME", "4":
 # PROCESS OUTLINE
 
 ## 1. Model Training    
-**Data Preprocessing**: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
-**Model Training**: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
-**Post-processing**: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
-**HF Spaces hosting**: Pushed fine tuned model to **karthiknitt/data_masking_distilbert_finetuned_ai4privacy**
+- **Data Preprocessing**: Tokenization and label alignment to ensure that sensitive entities are properly identified and labeled, even after tokenization splits words into subwords.
+- **Model Training**: Fine-tuned DistilBERT using Hugging Face's transformers library for token classification.
+- **Post-processing**: Masking sensitive entities in the output text by replacing identified entities with [MASKED].     
+- **HF Spaces hosting**: Pushed fine tuned model to **karthiknitt/data_masking_distilbert_finetuned_ai4privacy**
 
 
 ## 2. AWS-Powered Inference Pipeline    
