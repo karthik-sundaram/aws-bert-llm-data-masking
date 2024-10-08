@@ -6,31 +6,34 @@ It also includes deployment and hosting using **AWS services**
 
 ### ARCHITECTURE:
 
+    
 ![image](https://github.com/user-attachments/assets/7b8d35b1-7fb0-435a-a76b-ad5c651e514a)
 
 
 ### WORKING:
 
+    
 ![image](https://github.com/user-attachments/assets/64ef563a-4627-4a4b-8c26-4605a27a41bd)
 
+  
 #### Input:  
-I am facing an error here. help me resolve in short:  
+_I am facing an error here. help me resolve in short:  
   
 import psycopg2  
 conn = psycopg2.connect(host='192.168.1.100', port='5432', database='production_db', user='john_doe', password='1jhg$#12%9^f5')  
 cursor = conn.cursorr()   
 cursor.execute("SELECT * FROM users WHERE email = 'john.doe@example.com'")    
-
+_
 #### Masking of input: 
-I am facing an error here. help me resolve in short:  
+_I am facing an error here. help me resolve in short:  
   
 import psycopg2 
 conn = psycopg2.connect(host='[MASKED]', port='[MASKED]', database='production_db', user='[MASKED]', password='[MASKED]')  
 cursor = conn.cursorr()    
-cursor.execute("SELECT * FROM users WHERE email = '[MASKED]'")  
+cursor.execute("SELECT * FROM users WHERE email = '[MASKED]'")_  
 
 ### LLM Response:  
-The error in your code is due to a typo in the method call `cursorr()`. It should be `cursor()`. Here's the corrected code:
+_The error in your code is due to a typo in the method call `cursorr()`. It should be `cursor()`. Here's the corrected code:
   
 ```python 
 import psycopg2  
@@ -46,10 +49,11 @@ cursor = conn.cursor()  # Corrected this line
 cursor.execute("SELECT * FROM users WHERE email = '[MASKED]'")  
 ```  
   
-Make sure to replace `[MASKED]` with your actual database credentials.  
+Make sure to replace `[MASKED]` with your actual database credentials.  _
 
 
 ## Project Overview
+  
 We leverage two datasets:
 
 ai4privacy/pii-masking-43k  
