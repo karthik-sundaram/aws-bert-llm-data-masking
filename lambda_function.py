@@ -1,3 +1,13 @@
+# Timeout
+# 0min30sec
+
+# Memory
+ # 256MB
+
+# Ephemeral storage
+# 512MB
+
+
 import os
 import json
 import time
