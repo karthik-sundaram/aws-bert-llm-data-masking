@@ -75,12 +75,12 @@ Post-processing: Masking sensitive entities in the output text by replacing iden
 The inference pipeline leverages AWS Lambda as the orchestrator, coordinating requests and model execution, and integrates with API Gateway and CloudWatch for monitoring. The pipeline ensures data privacy before text is sent for further processing by OpenAI.  
 
 #### Inference Flow:    
-**Gradio Frontend**: Users input text via a Gradio interface hosted on Hugging Face Spaces.  
-**API Gateway**: Secures and routes API calls between the frontend and Lambda  
-**Lambda Orchestration**: Lambda handles the request and interacts with the **fine-tuned model (hosted on Hugging Face)** to mask sensitive data.  
-**CloudWatch**: Monitors the Lambda functions and logs API interactions for performance tracking.   
-**OpenAI API**: The masked text is sent to OpenAI for further processing (e.g., text completion).   
-**Response**: The final response is returned and displayed on the Gradio UI.   
+- **Gradio Frontend**: Users input text via a Gradio interface hosted on Hugging Face Spaces.  
+- **API Gateway**: Secures and routes API calls between the frontend and Lambda  
+- **Lambda Orchestration**: Lambda handles the request and interacts with the **fine-tuned model (hosted on Hugging Face)** to mask sensitive data.  
+- **CloudWatch**: Monitors the Lambda functions and logs API interactions for performance tracking.   
+- **OpenAI API**: The masked text is sent to OpenAI for further processing (e.g., text completion).   
+- **Response**: The final response is returned and displayed on the Gradio UI.   
  
 
 
