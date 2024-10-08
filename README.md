@@ -4,12 +4,16 @@ This project demonstrates how a DistilBERT-based NER model can be fine-tuned to 
 It showcases how we can enhance data privacy in real-world applications like healthcare or finance especially with being cautious about inadvertently sending out sensitive information into LLM/GenAi tool prompts.
 It also includes deployment and hosting using **AWS services**
 
+### ARCHITECTURE:
+
 ![image](https://github.com/user-attachments/assets/7b8d35b1-7fb0-435a-a76b-ad5c651e514a)
 
 
+### WORKING:
+
 ![image](https://github.com/user-attachments/assets/64ef563a-4627-4a4b-8c26-4605a27a41bd)
 
-### Input:  
+#### Input:  
 I am facing an error here. help me resolve in short:  
   
 import psycopg2  
@@ -17,7 +21,7 @@ conn = psycopg2.connect(host='192.168.1.100', port='5432', database='production_
 cursor = conn.cursorr()   
 cursor.execute("SELECT * FROM users WHERE email = 'john.doe@example.com'")    
 
-### Masking of input: 
+#### Masking of input: 
 I am facing an error here. help me resolve in short:  
   
 import psycopg2 
